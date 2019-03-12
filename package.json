@@ -10,7 +10,7 @@
     "react-dom": "^16.7.0",
     "regenerator-runtime": "^0.13.1",
     "ss-clean-babel": "^1.0.7",
-    "ss-clean-lint": "^1.0.4"
+    "ss-clean-lint": "^1.0.5"
   },
   "dependencies": {
     "babel-jest": "^23.6.0",
@@ -20,7 +20,7 @@
     "jest": "^23.6.0"
   },
   "scripts": {
-    "test": "jest",
-    "lint": "eslint --ext .js config example --config ./config/.eslintrc.js"
+    "test": "jest --config ./config/jest.config.js",
+    "lint": "eslint --ext .js src --config ./config/.eslintrc.js"
   }
 }
